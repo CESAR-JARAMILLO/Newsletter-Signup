@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #36384D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 36px;
+}
+
+.desktop-img {
+  display: none;
+}
+
+.mobile-img{
+  width: 100%;
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
+}
+
+.body-container {
+  padding: 40px 24px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 24px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.detail-container {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.detail-container p {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input {
+  height: 56px;
+  padding: 24px 16px;
+  margin-bottom: 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+button {
+  height: 56px;
+  background-color: #242742;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 928px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 36px;
+  }
+
+  .hero {
+    padding-right: 24px;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: block;
+    width: 100%;
+  }
+
+  .body-container {
+    padding: 98px 64px;
+  }
+  
+  h1 {
+    font-size: 64px;
+  }
+  
+  .description {
+    font-size: 20px;
+  }
+  
+  .detail-container p {
+    font-size: 20px;
+  }
+  
+  label {
+    font-size: 16px;
+  }
+  
+  button {
+    font-size: 20px;
+  }
+}
